@@ -35,7 +35,7 @@ void Solve(String line)
                 b = bo;
         }
     }
-    sum += (r * g * b);
+    sum += r*g*b;
 }
 
 
