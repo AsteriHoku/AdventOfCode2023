@@ -3,36 +3,25 @@
 StreamReader sr = new StreamReader("../../../day2.txt");
 int sum = 0;
 
-while (sr.Peek() >= 0)
-{
+while (sr.Peek() >= 0) {
     Solve(sr.ReadLine());
 }
 
 Console.WriteLine($"Congratulations you've reached the end sum of {sum}");
 
-void Solve(String line)
-{
-    var pieces = line.Split(new char[] {':', ';', ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
-    var p = Regex.Split(line, @"[^a-zA-Z0-9]+");
-    int r = 0;
-    int g = 0;
-    int b = 0;
+void Solve(String line) {
+    var pieces = Regex.Split(line, @"[^a-zA-Z0-9]+");
+    int r=0,g=0,b=0;
     
-    for (int i = 3; i < pieces.Length; ++i)
-    {
+    for (int i = 3; i < pieces.Length; ++i) {
         if (pieces[i] == "red") {
-            if (int.TryParse(pieces[i - 1], out int ro) && ro > r)
-                r = ro;
+            r = int.TryParse(pieces[i - 1], out int ro) && (ro > r) ? ro : r;
         }
-
         if (pieces[i] == "green") {
-            if (int.TryParse(pieces[i - 1], out int go) && go > g)
-                g = go;
+            g =int.TryParse(pieces[i - 1], out int go) && (go > g) ? go : g;
         }
-
         if (pieces[i] == "blue") {
-            if (int.TryParse(pieces[i - 1], out int bo) && bo > b)
-                b = bo;
+            b = int.TryParse(pieces[i - 1], out int bo) && (bo > b) ? bo : b;
         }
     }
     sum += r*g*b;
