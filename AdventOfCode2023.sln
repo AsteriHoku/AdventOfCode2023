@@ -1,8 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC.Day.01", "AoC.Day.01\AoC.Day.01.csproj", "{827F9008-989B-4C61-9670-1AE5F0871DE8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC", "AoC\AoC.csproj", "{827F9008-989B-4C61-9670-1AE5F0871DE8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC.Day.02", "AoC.Day.02\AoC.Day.02.csproj", "{DC5B602E-5FE5-4241-8271-5159927C5922}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC.Day.03", "AoC.Day.03\AoC.Day.03.csproj", "{F420E9C1-507C-4B60-81C3-9C1A99BA181D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +20,9 @@ Global
 		{DC5B602E-5FE5-4241-8271-5159927C5922}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC5B602E-5FE5-4241-8271-5159927C5922}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC5B602E-5FE5-4241-8271-5159927C5922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F420E9C1-507C-4B60-81C3-9C1A99BA181D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F420E9C1-507C-4B60-81C3-9C1A99BA181D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F420E9C1-507C-4B60-81C3-9C1A99BA181D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F420E9C1-507C-4B60-81C3-9C1A99BA181D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
